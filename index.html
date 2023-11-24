@@ -3,9 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/normalize.css" />
-    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="/node_modules/normalize.css/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>VIN NEWS</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <nav class="nav collapsible">
+        <!--Icon at left side-->
+        <a href="/"> <img src="/images/V-logo.svg" alt="VinNews V-logo" /> </a>
+        <svg class="icon icon-white nav__toggler">
+          <use xlink:href="/images/images-sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a>Movies</a></li>
+          <li class="nav__item"><a>Politics</a></li>
+          <li class="nav__item"><a>Sports</a></li>
+          <li class="nav__item"><a>Bussiness</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
